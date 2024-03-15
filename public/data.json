@@ -1,0 +1,90 @@
+[
+    {
+        "image": "../src/assets/one.jpg",
+        "id": "1",
+        "name": "Spicy Chicken Stir-Fry",
+        "description": "A fiery and flavorful stir-fry dish with tender chicken and crisp vegetables.",
+        "ingredients": [
+            "550 g chicken",
+            "120 ml soy sauce",
+            "200 g basil leaves",
+            "400 g mushroom"
+        ],
+        "time": "30 min",
+        "calories": "320 calories"
+    },
+    {
+        "image": "../src/assets/two.jpg",
+        "id": "2",
+        "name": "Vegetable Curry",
+        "description": "A fragrant and hearty curry packed with assorted vegetables and aromatic spices.",
+        "ingredients": [
+            "300 g mixed vegetables",
+            "100 g spinach",
+            "200 ml coconut milk",
+            "150 g chickpeas",
+            "2 tbsp curry powder"
+        ],
+        "time": "45 min",
+        "calories": "250 calories"
+    },
+    {
+        "image": "../src/assets/three.jpg",
+        "id": "3",
+        "name": "Mango Salsa Chicken",
+        "description": "Juicy grilled chicken topped with a refreshing and tangy mango salsa.",
+        "ingredients": [
+            "4 boneless chicken breasts",
+            "2 ripe mangoes, diced",
+            "1 red bell pepper, chopped",
+            "1/4 cup red onion, finely diced",
+            "1/4 cup fresh cilantro, chopped"
+        ],
+        "time": "25 min",
+        "calories": "280 calories"
+    },
+    {
+        "image": "../src/assets/four.jpg",
+        "id": "4",
+        "name": "Caprese Salad",
+        "description": "A classic Italian salad showcasing the flavors of ripe tomatoes, fresh mozzarella, and fragrant basil.",
+        "ingredients": [
+            "3 ripe tomatoes",
+            "250 g fresh mozzarella cheese",
+            "1/4 cup fresh basil leaves",
+            "2 tbsp balsamic glaze"
+        ],
+        "time": "15 min",
+        "calories": "180 calories"
+    },
+    {
+        "image": "../src/assets/five.jpg",
+        "id": "5",
+        "name": "Shrimp Pasta with Garlic Butter Sauce",
+        "description": "Delicious shrimp served over pasta tossed in a rich and creamy garlic butter sauce.",
+        "ingredients": [
+            "400 g shrimp, peeled and deveined",
+            "300 g linguine pasta",
+            "4 cloves garlic, minced",
+            "1/2 cup unsalted butter",
+            "1/4 cup chopped parsley"
+        ],
+        "time": "35 min",
+        "calories": "380 calories"
+    },
+    {
+        "image": "../src/assets/six.jpg",
+        "id": "6",
+        "name": "Banana Oatmeal Pancakes",
+        "description": "Fluffy and wholesome pancakes made with ripe bananas and hearty oats.",
+        "ingredients": [
+            "2 ripe bananas",
+            "1 cup rolled oats",
+            "2 eggs",
+            "1 tsp baking powder",
+            "1/2 tsp cinnamon"
+        ],
+        "time": "20 min",
+        "calories": "220 calories"
+    }
+]
