@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from 'react'
 
 import './App.css'
@@ -12,6 +13,7 @@ import Side from './container/Side/Side'
 function App() {
 
   const [items,setItems]=useState([]);
+  const [food,setFood]=useState([])
 
   useEffect(() => {
     fetch("/data.json")
@@ -21,6 +23,22 @@ function App() {
       });
   }, []);
  
+ function handleClick(click) {
+  const isExists = food.find((set) => set.id == click.id);
+  if (!isExists) {
+    setFood([...food, click]);
+  // eslint-disable-next-line no-empty
+  } else {
+    
+  }
+  }
+
+
+  const handleRemove = (id) => {
+    const remove = food.filter((rem) => rem.id != id);
+    setFood(remove);
+  };
+  
 
 
   return (
@@ -43,18 +61,73 @@ function App() {
 
       
       <div className='flex mt-24 flex-col lg:flex-row md:flex-row'>
-            <div className='w-[65%] grid lg:grid-cols-2 grid-cols-1 space-y-5'>
+            <div className='lg:w-[65%] grid lg:grid-cols-2 grid-cols-1 space-y-5'>
             {items.map((card) => (
               
               <Function  
               key={card.id}
                 cardData={card}
+                handleClick={handleClick}
               ></Function>
             ))}
             </div>
 
-            <div className='justify-end w-[30%]'>
-              <Side></Side>
+            <div className='justify-end lg:w-[33%] w-full md:w-[35%]'>
+           <div className="grid rounded-2xl bg-gray-400  space-y-3 pb-5">
+              <h2 className='ml-11 lg:text-center text-xl font-bold  mb-5 mt-5'>Want to cook: 00</h2> <hr className='md:w-[78%] lg:w-full' />
+              <div className=" opacity-65 ">
+                <div className='grid grid-cols-5 pt-5 text-center items-center'>
+                  <p >0</p>
+                  <p>Name</p>
+                  <p>Time</p>
+                  <p>Calories</p>
+                  <p></p>
+                </div>
+              </div>
+              {
+                food.map((foodAll,index)=>(
+                  // eslint-disable-next-line react/jsx-key
+                  <div className=" opacity-65 ">
+                   <div className='grid grid-cols-5 pt-5 text-center items-center'>
+                  <p>{index+1}</p>
+                  <p >{foodAll.name.slice(0, 5)}</p>
+                  <p>{foodAll.time}</p>
+                  <p>{foodAll.calories}</p>
+                  <p onClick={()=>handleRemove(foodAll.id)} className='btn rounded-3xl btn-primary'>Preparing</p>
+                </div>
+              </div>
+                ))
+              }
+            </div>
+
+
+
+
+
+           <div className="grid rounded-2xl bg-gray-400  space-y-3 pb-5 mt-5">
+              <h2 className='ml-11 lg:text-center text-xl font-bold  mb-5 mt-5'>Want to cook: 00</h2> <hr className='md:w-[78%] lg:w-full' />
+              <div className=" opacity-65 ">
+                <div className='grid grid-cols-4 pt-5 text-center items-center'>
+                  <p >0</p>
+                  <p>Name</p>
+                  <p>Time</p>
+                  <p>Calories</p>
+                  
+                </div>
+              </div>
+             
+                  
+                  <div className=" opacity-65 ">
+                   <div className='grid grid-cols-5 pt-5 text-center items-center'>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                  <p></p>
+                 
+                </div>
+              </div>
+               
+            </div>
             </div>
             
       </div>

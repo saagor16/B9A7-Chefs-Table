@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 
-const Function = ({cardData}) => {
+const Function = ({cardData,handleClick}) => {
     
 
     return (
@@ -34,7 +34,7 @@ const Function = ({cardData}) => {
                         </div>
                     </div>
                     <div className="card-actions mt-4">
-                    <button className="btn btn-primary rounded-full">Want to Cook</button>
+                    <button onClick={()=>handleClick(cardData)} className="btn btn-primary rounded-full">Want to Cook</button>
                     </div>
                 </div>
             </div>
