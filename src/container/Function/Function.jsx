@@ -14,7 +14,7 @@ const Function = ({cardData,handleClick}) => {
                     <hr />
                     <div className="space-y-3">
                         <h2 className="font-bold text-xl">Ingredients:6</h2>
-                        <ul className="space-y-2 ">
+                        <ul className="space-y-2  list-disc">
                             <li>{cardData.ingredients[0]}</li>
                             <li>{cardData.ingredients[1]}</li>
                             <li>{cardData.ingredients[2]}</li>
