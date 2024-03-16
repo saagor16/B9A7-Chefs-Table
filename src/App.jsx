@@ -6,7 +6,8 @@ import Navbar from './container/Navbar/Navbar'
 import Recipes from './container/Rectitle/Recipes'
 import Banner from './container/Banner/Banner'
 import Function from './container/Function/Function'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -32,16 +33,19 @@ function App() {
   if (!isExists) {
     setFood([...food, click]);
     setCount(count+1);
-
+    
   // eslint-disable-next-line no-empty
   } else {
-    
+    toast(' Add THe card');
   }
   }
-
 
   const handleRemove = (idd) => {
-    const remove = food.filter((rem) => rem.id != idd);
+    const one = [...newFood,idd]
+    setNewFood(one)
+  
+
+    const remove = food.filter((rem) => rem.id != idd.id);
     const negative =count-1;
     setCount(negative);
     const positive = newCount+1;
@@ -105,7 +109,8 @@ function App() {
                   <p >{foodAll.name.slice(0, 10)}</p>
                   <p>{foodAll.time}</p>
                   <p>{foodAll.calories}</p>
-                  <p onClick={()=>handleRemove(foodAll.id)} className='btn rounded-3xl btn-primary'>Preparing</p>
+                  <p onClick={()=>handleRemove(foodAll)} className='btn rounded-3xl btn-primary'>Preparing</p>
+                  <ToastContainer />
                 </div>
               </div>
                 ))
@@ -124,15 +129,20 @@ function App() {
                 </div>
               </div>   
               <div>
-              <div className=" opacity-65 ">
-                   <div className='grid grid-cols-5 pt-5 text-center items-center'>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                 
-                  </div>
+               {
+                newFood.map((foodAll,index)=>(
+                  
+                  <div key={index} className=" opacity-65 ">
+                  <div className='grid grid-cols-5 pt-5 text-center items-center'>
+                   <p>{index+1}</p>
+                   <p>{foodAll.name.slice(0, 10)}</p>
+                   <p>{foodAll.time}</p>
+                   <p>{foodAll.calories}</p>
+                
+                 </div>
                 </div>
+                ))
+               }
               </div>
                
             </div>
