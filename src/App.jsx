@@ -111,7 +111,7 @@ function App() {
               {
                 food.map((foodAll,index)=>(
                   // eslint-disable-next-line react/jsx-key
-                  <div className=" opacity-65 ">
+                  <div className=" opacity-100 ">
                    <div className='grid grid-cols-5 pt-5 text-center items-center gap-2 pr-5'>
                   <p>{index+1}</p>
                   <p >{foodAll.name}</p>
@@ -140,7 +140,7 @@ function App() {
                {
                 newFood.map((foodAll,index)=>(
                   
-                  <div key={index} className=" opacity-65 mr-10">
+                  <div key={index} className=" opacity-100 mr-10">
                   <div className='grid grid-cols-4 pt-5 text-center items-center'>
                    <p>{index+1}</p>
                    <p>{foodAll.name}</p>
