@@ -6,6 +6,7 @@ import Navbar from './container/Navbar/Navbar'
 import Recipes from './container/Rectitle/Recipes'
 import Banner from './container/Banner/Banner'
 import Function from './container/Function/Function'
+import Footer from './container/Footer/footer'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -165,6 +166,10 @@ function App() {
             </div>
           </div>
             
+      </div>
+
+      <div className='mt-5'>
+          <Footer></Footer>
       </div>
 
       
