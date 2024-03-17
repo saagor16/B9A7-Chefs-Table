@@ -125,7 +125,7 @@ function App() {
             </div>
 
            <div className="grid rounded-2xl bg-gray-400  space-y-3 pb-5 mt-5">
-              <h2 className='text-center text-xl font-bold  mb-5 mt-5'>Want to cook: <span>{newCount}</span></h2> <hr className='md:w-[100%] lg:w-full'/>
+              <h2 className='text-center text-xl font-bold  mb-5 mt-5'>Currently cooking: <span>{newCount}</span></h2> <hr className='md:w-[100%] lg:w-full'/>
               <div className=" mr-10">
                 <div className='grid grid-cols-4 pt-5 text-center items-center text-lg font-bold'>
                   <p ></p>
