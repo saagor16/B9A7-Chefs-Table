@@ -1,6 +1,6 @@
 [
     {
-        "image": "../src/assets/one.jpg",
+        "image": "/public/imga/one.jpg",
         "id": "1",
         "name": "Spicy Chicken Stir-Fry",
         "description": "A fiery and flavorful stir-fry dish with tender chicken and crisp vegetables.",
@@ -29,7 +29,7 @@
         "calories": "250 calories"
     },
     {
-        "image": "../src/assets/three.jpg",
+        "image": "/public/imga/three.jpg",
         "id": "3",
         "name": "Mango Salsa Chicken",
         "description": "Juicy grilled chicken topped with a refreshing and tangy mango salsa.",
@@ -44,7 +44,7 @@
         "calories": "280 calories"
     },
     {
-        "image": "../src/assets/four.jpg",
+        "image": "/public/imga/four.jpg",
         "id": "4",
         "name": "Caprese Salad",
         "description": "A classic Italian salad showcasing the flavors of ripe tomatoes, fresh mozzarella, and fragrant basil.",
@@ -58,7 +58,7 @@
         "calories": "180 calories"
     },
     {
-        "image": "../src/assets/five.jpg",
+        "image": "/public/imga/five.jpg",
         "id": "5",
         "name": "Shrimp Pasta with Garlic Butter Sauce",
         "description": "Delicious shrimp served over pasta tossed in a rich and creamy garlic butter sauce.",
@@ -73,7 +73,7 @@
         "calories": "380 calories"
     },
     {
-        "image": "../src/assets/six.jpg",
+        "image": "/public/imga/six.jpg",
         "id": "6",
         "name": "Banana Oatmeal Pancakes",
         "description": "Fluffy and wholesome pancakes made with ripe bananas and hearty oats.",
