@@ -7,7 +7,7 @@ const Function = ({cardData,handleClick}) => {
     return (
         <div>
             <div className="card lg:w-[420px] md:w-[420px] bg-base-100 shadow-xl h-full">
-                 <figure><img className=" rounded-3xl p-5" src={cardData.image} alt="food" /></figure>
+                 <figure><img className=" rounded-3xl p-5 w-full h-[320px]" src={cardData.image} alt="food" /></figure>
                 <div className="card-body ">
                     <h2 className="card-title text-xl font-bold">{cardData.name}</h2>
                     <p>{cardData.description}</p>

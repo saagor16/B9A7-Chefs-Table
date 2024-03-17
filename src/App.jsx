@@ -95,7 +95,7 @@ function App() {
            <div className="grid rounded-2xl bg-gray-400  space-y-3 pb-5">
               <h2 className='  text-center text-xl font-bold  mb-5 mt-5'>Want to cook: <span>{count}</span> </h2> <hr className='md:w-[100%] lg:w-full' />
               <div className=" ">
-                <div className='grid grid-cols-5 pt-5 text-center items-center text-lg font-bold'>
+                <div className='grid grid-cols-5 pt-5 text-center items-center text-lg font-bold pr-5'>
                   <p ></p>
                   <p>Name</p>
                   <p>Time</p>
@@ -107,9 +107,9 @@ function App() {
                 food.map((foodAll,index)=>(
                   // eslint-disable-next-line react/jsx-key
                   <div className=" opacity-65 ">
-                   <div className='grid grid-cols-5 pt-5 text-center items-center'>
+                   <div className='grid grid-cols-5 pt-5 text-center items-center gap-2 pr-5'>
                   <p>{index+1}</p>
-                  <p >{foodAll.name.slice(0, 10)}</p>
+                  <p >{foodAll.name}</p>
                   <p>{foodAll.time}</p>
                   <p>{foodAll.calories}</p>
                   <p onClick={()=>handleRemove(foodAll)} className='btn rounded-3xl btn-primary'>Preparing</p>
@@ -138,7 +138,7 @@ function App() {
                   <div key={index} className=" opacity-65 mr-10">
                   <div className='grid grid-cols-4 pt-5 text-center items-center'>
                    <p>{index+1}</p>
-                   <p>{foodAll.name.slice(0, 10)}</p>
+                   <p>{foodAll.name}</p>
                    <p>{foodAll.time}</p>
                    <p>{foodAll.calories}</p>
                 
