@@ -19,6 +19,7 @@ function App() {
   const [count, setCount] = useState(0);
   const [newCount, setNewCount] = useState(0);
   const [mint,setMint]=useState(0);
+  const [calories,setCalories]=useState(0);
 
 
   useEffect(() => {
@@ -51,10 +52,13 @@ function App() {
     setNewCount(positive);
     setFood(remove);
     let mint =0;
+    let calories =0;
     one.forEach(set=>{
-      mint+=set.time;
+      mint+=parseInt(set.time);
+      calories+=parseInt(set.calories);
     })
     setMint(mint);
+    setCalories(calories);
     
   };
   
@@ -156,7 +160,7 @@ function App() {
               </div>
               <div className='text-xl space-y-2'>
                 <h5>Total calories=</h5>
-                <p><spam></spam> calories</p>
+                <p><spam>{calories}</spam> calories</p>
               </div>
             </div>
           </div>
