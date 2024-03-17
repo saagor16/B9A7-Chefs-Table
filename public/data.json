@@ -73,7 +73,7 @@
         "calories": "380 calories"
     },
     {
-        "image": "/public/imga/six.jpg",
+        "image": "../public/imga/six.jpg",
         "id": "6",
         "name": "Banana Oatmeal Pancakes",
         "description": "Fluffy and wholesome pancakes made with ripe bananas and hearty oats.",
