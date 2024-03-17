@@ -1,4 +1,4 @@
-
+import navImg from '../../assets/lastpeo.jpg'
 
 const Navbar = () => {
     return (
@@ -37,7 +37,7 @@ const Navbar = () => {
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="lg:w-10 rounded-full">
-                                 <img alt="Tailwind CSS Navbar component" src="/src/assets/lastpeo.jpg" />
+                                 <img alt="Tailwind CSS Navbar component" src={navImg} />
                             </div>
                         </div>
                     </div>
