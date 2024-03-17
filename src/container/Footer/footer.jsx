@@ -3,7 +3,7 @@
 const footer = () => {
     return (
         <div>
-            <footer className="footer footer-center p-10 bg-neutral text-primary-content">
+            <footer className="footer footer-center pt-10 bg-neutral text-primary-content">
                 <aside>
                     <p className="font-bold">
                     Recipe Calories <br/>Providing reliable tech since 1992
