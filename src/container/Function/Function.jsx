@@ -1,7 +1,11 @@
 /* eslint-disable react/prop-types */
 
 
+
 const Function = ({cardData,handleClick}) => {
+    
+    const foodAllItems = cardData.ingredients;
+    const foodItems = foodAllItems.map((a,e)=><li key={e}>{a}</li>)
     
 
     return (
@@ -15,10 +19,8 @@ const Function = ({cardData,handleClick}) => {
                     <div className="space-y-3 pl-5">
                         <h2 className="font-bold text-xl">Ingredients:<span>{cardData.ingredients.length}</span></h2>
                         <div className="">
-                        <ul className="space-y-2   list-disc">
-                            <li>{cardData.ingredients[0]}</li>
-                            <li>{cardData.ingredients[1]}</li>
-                            <li>{cardData.ingredients[2]}</li>
+                        <ul className="space-y-2 list-disc">
+                        {foodItems}
                         </ul>
                         </div>
                     </div>
