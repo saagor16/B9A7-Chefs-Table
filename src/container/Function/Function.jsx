@@ -6,19 +6,21 @@ const Function = ({cardData,handleClick}) => {
 
     return (
         <div>
-            <div className="card lg:w-[420px] bg-base-100 shadow-xl w-[385px]  h-[620px] ">
-                 <figure><img className=" rounded-2xl " src={cardData.image} alt="food" /></figure>
-                <div className="card-body">
+            <div className="card lg:w-[420px] md:w-[420px] bg-base-100 shadow-xl h-full">
+                 <figure><img className=" rounded-3xl p-5" src={cardData.image} alt="food" /></figure>
+                <div className="card-body ">
                     <h2 className="card-title text-xl font-bold">{cardData.name}</h2>
                     <p>{cardData.description}</p>
                     <hr />
-                    <div className="space-y-3">
-                        <h2 className="font-bold text-xl">Ingredients:6</h2>
-                        <ul className="space-y-2  list-disc">
+                    <div className="space-y-3 pl-5">
+                        <h2 className="font-bold text-xl">Ingredients:<span>{cardData.ingredients.length}</span></h2>
+                        <div className="">
+                        <ul className="space-y-2   list-disc">
                             <li>{cardData.ingredients[0]}</li>
                             <li>{cardData.ingredients[1]}</li>
                             <li>{cardData.ingredients[2]}</li>
                         </ul>
+                        </div>
                     </div>
                     <hr />
                     <div className="flex space-x-16">

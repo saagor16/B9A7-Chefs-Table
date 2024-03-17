@@ -3,7 +3,7 @@
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar bg-base-100">
+            <div className="navbar bg-base-100 p-5">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -16,7 +16,7 @@ const Navbar = () => {
                         <li><a>Search</a></li>
                     </ul>
                     </div>
-                     <a className="btn btn-ghost text-xl">Recipe Calories</a>
+                     <a className="btn btn-ghost text-base lg:text-xl">Recipe Calories</a>
                 </div>
                 <div className="navbar-center ml-2 hidden lg:flex ">
                     <ul className="menu menu-horizontal px-1">
@@ -36,7 +36,7 @@ const Navbar = () => {
                     </div>
                     <div className="dropdown dropdown-end">
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
+                            <div className="lg:w-10 rounded-full">
                                  <img alt="Tailwind CSS Navbar component" src="/src/assets/lastpeo.jpg" />
                             </div>
                         </div>

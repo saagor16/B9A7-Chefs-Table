@@ -18,6 +18,7 @@ function App() {
   const [newFood,setNewFood]=useState([])
   const [count, setCount] = useState(0);
   const [newCount, setNewCount] = useState(0);
+  const [mint,setMint]=useState(0);
 
 
   useEffect(() => {
@@ -36,22 +37,24 @@ function App() {
     
   // eslint-disable-next-line no-empty
   } else {
-    toast(' Add THe card');
+    toast(' already exists !');
   }
   }
 
   const handleRemove = (idd) => {
     const one = [...newFood,idd]
     setNewFood(one)
-  
-
     const remove = food.filter((rem) => rem.id != idd.id);
     const negative =count-1;
     setCount(negative);
     const positive = newCount+1;
     setNewCount(positive);
     setFood(remove);
-    
+    let mint =0;
+    one.forEach(set=>{
+      mint+=set.time;
+    })
+    setMint(mint);
     
   };
   
@@ -67,17 +70,17 @@ function App() {
         <Navbar></Navbar>
       </div>
 
-      <div>
+      <div className='m-5'>
         <Banner></Banner>
       </div>
 
-      <div className='mt-10 text-center'>
+      <div className='mt-10 text-center m-10'>
         <Recipes></Recipes>
       </div>
 
       
       <div className='flex mt-24 flex-col lg:flex-row md:flex-row'>
-            <div className='lg:w-[65%] grid lg:grid-cols-2 grid-cols-1 space-y-5'>
+            <div className='lg:w-[65%] grid lg:grid-cols-2 grid-cols-1 space-y-5 m-5'>
             {items.map((card) => (
               
               <Function  
@@ -88,11 +91,11 @@ function App() {
             ))}
             </div>
 
-            <div className='justify-end lg:w-[33%] w-full md:w-[35%]'>
+            <div className='justify-end lg:w-[33%] w-full md:w-[35%] p-5'>
            <div className="grid rounded-2xl bg-gray-400  space-y-3 pb-5">
-              <h2 className='ml-11 lg:text-center text-xl font-bold  mb-5 mt-5'>Want to cook: <span>{count}</span> </h2> <hr className='md:w-[78%] lg:w-full' />
-              <div className=" opacity-65 ">
-                <div className='grid grid-cols-5 pt-5 text-center items-center'>
+              <h2 className='  text-center text-xl font-bold  mb-5 mt-5'>Want to cook: <span>{count}</span> </h2> <hr className='md:w-[100%] lg:w-full' />
+              <div className=" ">
+                <div className='grid grid-cols-5 pt-5 text-center items-center text-lg font-bold'>
                   <p ></p>
                   <p>Name</p>
                   <p>Time</p>
@@ -118,9 +121,9 @@ function App() {
             </div>
 
            <div className="grid rounded-2xl bg-gray-400  space-y-3 pb-5 mt-5">
-              <h2 className='ml-11 lg:text-center text-xl font-bold  mb-5 mt-5'>Want to cook: <span>{newCount}</span></h2> <hr className='md:w-[78%] lg:w-full' />
-              <div className=" opacity-65 ">
-                <div className='grid grid-cols-4 pt-5 text-center items-center'>
+              <h2 className='text-center text-xl font-bold  mb-5 mt-5'>Want to cook: <span>{newCount}</span></h2> <hr className='md:w-[100%] lg:w-full'/>
+              <div className=" mr-10">
+                <div className='grid grid-cols-4 pt-5 text-center items-center text-lg font-bold'>
                   <p ></p>
                   <p>Name</p>
                   <p>Time</p>
@@ -132,8 +135,8 @@ function App() {
                {
                 newFood.map((foodAll,index)=>(
                   
-                  <div key={index} className=" opacity-65 ">
-                  <div className='grid grid-cols-5 pt-5 text-center items-center'>
+                  <div key={index} className=" opacity-65 mr-10">
+                  <div className='grid grid-cols-4 pt-5 text-center items-center'>
                    <p>{index+1}</p>
                    <p>{foodAll.name.slice(0, 10)}</p>
                    <p>{foodAll.time}</p>
@@ -145,6 +148,16 @@ function App() {
                }
               </div>
                
+            </div>
+            <div className='grid grid-cols-2 mt-5 md:grid-cols-1 space-y-5  text-center'>
+              <div className='text-xl space-y-2'>
+                <h5>Total Time=</h5>
+                <p><spam>{mint}</spam> minutes</p>
+              </div>
+              <div className='text-xl space-y-2'>
+                <h5>Total calories=</h5>
+                <p><spam></spam> calories</p>
+              </div>
             </div>
           </div>
             
