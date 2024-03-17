@@ -1,6 +1,6 @@
 [
     {
-        "image": "/public/imga/one.jpg",
+        "image": "https://mojo.generalmills.com/api/public/content/eBQCqx2iVkeHWZc-_onxbw_gmi_hi_res_jpeg.jpeg?v=6347f427&t=466b54bb264e48b199fc8e83ef1136b4",
         "id": "1",
         "name": "Spicy Chicken Stir-Fry",
         "description": "A fiery and flavorful stir-fry dish with tender chicken and crisp vegetables.",
@@ -14,7 +14,7 @@
         "calories": "320 calories"
     },
     {
-        "image": "/public/imga/two.jpg",
+        "image": "https://www.fromachefskitchen.com/wp-content/uploads/2017/01/Indian-Root-Vegetable-Curry-5-500x375.jpg",
         "id": "2",
         "name": "Vegetable Curry",
         "description": "A fragrant and hearty curry packed with assorted vegetables and aromatic spices.",
@@ -29,7 +29,7 @@
         "calories": "250 calories"
     },
     {
-        "image": "/public/imga/three.jpg",
+        "image": "https://healthyfitnessmeals.com/wp-content/uploads/2018/04/grilled-chicken-with-mango-avocado-salsa-3-SQUARE.jpg",
         "id": "3",
         "name": "Mango Salsa Chicken",
         "description": "Juicy grilled chicken topped with a refreshing and tangy mango salsa.",
@@ -44,7 +44,7 @@
         "calories": "280 calories"
     },
     {
-        "image": "/public/imga/four.jpg",
+        "image": "https://c.ndtvimg.com/2018-10/seb6pp0g_salad_625x300_19_October_18.jpg",
         "id": "4",
         "name": "Caprese Salad",
         "description": "A classic Italian salad showcasing the flavors of ripe tomatoes, fresh mozzarella, and fragrant basil.",
@@ -58,7 +58,7 @@
         "calories": "180 calories"
     },
     {
-        "image": "/public/imga/five.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpL4CUfZ3OLNhWsF1Ce__cyX22rp2VmV-ycQ&usqp=CAU",
         "id": "5",
         "name": "Shrimp Pasta with Garlic Butter Sauce",
         "description": "Delicious shrimp served over pasta tossed in a rich and creamy garlic butter sauce.",
@@ -73,7 +73,7 @@
         "calories": "380 calories"
     },
     {
-        "image": "../public/imga/six.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS1w9deJUI5TtcjJJ_JeUMQyCULl2hGlMuEw&usqp=CAU",
         "id": "6",
         "name": "Banana Oatmeal Pancakes",
         "description": "Fluffy and wholesome pancakes made with ripe bananas and hearty oats.",

@@ -153,8 +153,8 @@ function App() {
               </div>
                
             </div>
-            <div className='grid grid-cols-2 mt-5 md:grid-cols-1 space-y-5  text-center'>
-              <div className='text-xl space-y-2'>
+            <div className='grid grid-cols-2 mt-5 md:grid-cols-1 lg:grid-cols-2 lg:space-y-5  text-center'>
+              <div className='text-xl space-y-2 lg:mt-5'>
                 <h5>Total Time=</h5>
                 <p><spam>{mint}</spam> minutes</p>
               </div>
