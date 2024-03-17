@@ -1,4 +1,4 @@
-import navImg from '../../assets/lastpeo.jpg'
+import navImg from '../../../public/imga/lastpeo.jpg'
 
 const Navbar = () => {
     return (

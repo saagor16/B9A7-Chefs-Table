@@ -14,7 +14,7 @@
         "calories": "320 calories"
     },
     {
-        "image": "../src/assets/two.jpg",
+        "image": "/public/imga/two.jpg",
         "id": "2",
         "name": "Vegetable Curry",
         "description": "A fragrant and hearty curry packed with assorted vegetables and aromatic spices.",
