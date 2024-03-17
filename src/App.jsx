@@ -74,11 +74,11 @@ function App() {
         <Navbar></Navbar>
       </div>
 
-      <div className='m-5'>
+      <div className='m-2'>
         <Banner></Banner>
       </div>
 
-      <div className='mt-10 text-center m-10'>
+      <div className='mt-5 text-center m-10'>
         <Recipes></Recipes>
       </div>
 
